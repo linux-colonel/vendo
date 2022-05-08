@@ -119,7 +119,7 @@ static void reverse_watermelon() {
   FastLED.show();
 }
 
-static void random() {
+static void random_led() {
   for(int i=0; i<NUM_LEDS; i++)
     leds[i] = CRGB(random8(), random8(), random8());
 
@@ -146,7 +146,7 @@ preset_t presets[] = {
   "mango parfait", mango_parfait,
   "pride", pride,
   "rainbow", rainbow,
-  "random", random,
+  "random", random_led,
   "reverse watermelon", reverse_watermelon,
   "xmas", xmas,
   "black", black
