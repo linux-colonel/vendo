@@ -149,8 +149,8 @@ static boolean vendo_led_system(char *buf, size_t buflen) {
 static boolean vendo_led_diagnostic(char *buf, size_t buflen) {
     snprintf(buf,
 	     buflen,
-	     "{ \"platform\": \"%s\", \"freeheap\": %d, \"uptime\": %lu, \"rssi\": %d, \"reboots\": %d, \"wifi_failures\": %d }",
-	     "discoball", ESP.getFreeHeap(), App.uptime()/1000, WiFi.RSSI(), App.boot_count(), App.wifi_failures());
+	     "{ \"platform\": \"%s\", \"freeheap\": %d, \"uptime\": %lu, \"reboots\": %d }",
+	     "discoball", ESP.getFreeHeap(), App.uptime()/1000,  App.boot_count());
 
     return true;
 }
